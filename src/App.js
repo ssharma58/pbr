@@ -2,8 +2,8 @@ import React from 'react';
 import Loginpage from './Loginpage/Loginpage';
 import Aboutpage from './Aboutpage/Aboutpage';
 
-import './App.css';
-
+import './App.scss';
+ 
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,6 +15,9 @@ import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import Homepage from './Homepage/Homepage';
 import Footer from './Footer/Footer';
+// import PieChart from './PieChart/PieChart';
+import Chartjs from './Chartjs/Chartjs';
+
 
 function App() {
   return (
@@ -37,8 +40,10 @@ function App() {
         
           <Route path ="/"><Homepage/></Route>
 </Switch>
-
-
+    {/* <PieChart/> */}
+      {/* <Budgetlist/> */}
+    <Chartjs/>
+      
       </div>
       <Homepage/>
       <Footer/>
