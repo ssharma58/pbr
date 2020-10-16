@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Loginpage from './Loginpage/Loginpage';
 import Aboutpage from './Aboutpage/Aboutpage';
 
@@ -17,10 +17,12 @@ import Homepage from './Homepage/Homepage';
 import Footer from './Footer/Footer';
 // import PieChart from './PieChart/PieChart';
 import Chartjs from './Chartjs/Chartjs';
+import PieChart from './PieChart/PieChart';
 
 
 function App() {
   return (
+    
     <Router>
       <Menu/>
       <Hero/>
@@ -40,7 +42,7 @@ function App() {
         
           <Route path ="/"><Homepage/></Route>
 </Switch>
-    {/* <PieChart/> */}
+    <PieChart/>
       {/* <Budgetlist/> */}
     <Chartjs/>
       
